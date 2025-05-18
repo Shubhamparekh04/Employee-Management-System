@@ -1,12 +1,124 @@
-# React + Vite
+# 👨‍💼 Employee Management System (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple yet fully functional Employee Management System built with React and Bootstrap. This project supports adding, editing, and deleting employee records — with data stored in component state.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Screenshot
 
-## Expanding the ESLint configuration
+> _You can add a screenshot here if needed (optional)_
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Live Link
+
+No live deployment yet. Run it locally using instructions below.
+
+---
+
+## 📂 Project Structure
+
+
+Employee-Management-System/
+├── public/
+│ └── index.html
+├── src/
+│ └── App.js
+├── package.json
+├── vite.config.js
+└── README.md
+
+
+
+---
+
+## 📦 Installation & Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Shubhamparekh04/Employee-Management-System.git
+cd Employee-Management-System
+
+
+2. Install Dependencies
+bash
+Copy
+Edit
+npm install
+
+3. Run the App Locally
+bash
+Copy
+Edit
+npm run dev
+
+🛠 Tech Stack Used
+⚛️ React (Functional Components & Hooks)
+
+🎨 Bootstrap 5 (CDN or via index.html)
+
+🛠 Vite (React starter)
+
+🧠 useState for state management
+
+
+
+✨ Features
+➕ Add Employee
+
+📝 Edit Employee
+
+❌ Delete Employee
+
+✅ Form Validation
+
+📄 Dynamic Department Selection (checkboxes)
+
+📊 Table View of All Employees
+
+💻 Responsive Layout
+
+
+
+
+| Field      | Type         | Options                  | Required |
+| ---------- | ------------ | ------------------------ | -------- |
+| Name       | Text         | -                        | ✅        |
+| Gender     | Radio        | Male / Female            | ✅        |
+| Department | Checkbox(es) | HR / IT / Marketing      | ❌        |
+| Salary     | Number       | ₹25,000 - ₹1,00,000      | ✅        |
+| City       | Dropdown     | Surat / Navsari / Valsad | ✅        |
+| Address    | Textarea     | -                        | ✅        |
+
+
+
+🔍 How It Works
+🔁 State Variables
+empData: stores the form input data.
+
+empList: holds all employee records.
+
+editId: stores the ID of the employee being edited.
+
+📝 Form Handling
+handleChange() updates input fields.
+
+Department checkboxes are stored in an array.
+
+handleSubmit():
+
+Adds a new employee if not in edit mode.
+
+Updates existing employee if editing.
+
+🧹 Resetting
+After submission or update, the form is reset using setEmpData({}).
+
+🗑️ Deletion
+handleDelete() removes employee based on ID.
+
+✏️ Editing
+handleEdit() loads selected employee into the form for updating.
+
+
